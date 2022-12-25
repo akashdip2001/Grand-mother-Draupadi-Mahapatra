@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Image Gallery</title>
+  <meta name="description" content="Responsive Image Gallery">
+  <meta name="author" content="">
+
+</head>
+
+<body>
+  <div class="button">
+    <a target="_blank" href="https://akashdip2001.github.io/Grand-mother-Draupadi-Mahapatra/"><button class="button button1">Back</button></a>
+    <a target="_blank" href="https://akashdip2001.github.io/Grand-mother-Draupadi-Mahapatra-Day-2/"><button class="button button2">Day 2</button></a>
+    <a target="_blank" href="https://akashdip2001.github.io/linktree/"><button class="button button3">me 🐼</button></a>
+
+  </div>
+  <div id="gallery">
+
+    <img src="images/শ্রাদ্ধ Śrāddha (1).jpg">
+    <img src="images/শ্রাদ্ধ Śrāddha (3).jpg">
+    <img src="images/শ্রাদ্ধ Śrāddha (5).jpg">
+    <img src="images/শ্রাদ্ধ Śrāddha (2).jpg">
+    <img src="images/শ্রাদ্ধ Śrāddha (4).jpg">
+
+    <div class="button">
+      <a target="_blank" href="https://akashdip2001.github.io/Grand-mother-Draupadi-Mahapatra/"><button class="button button1">Back</button></a>
+      <a target="_blank" href="https://akashdip2001.github.io/Grand-mother-Draupadi-Mahapatra-Day-2/"><button class="button button2">Day 2</button></a>
+
+    </div>
+
+  </div>
+
+
+
+
+<!-- css -->
+
+
+
+
+<style>
+
+#gallery {
+    line-height: 0;
+    -webkit-column-count: 1;
+    /* split it into 5 columns */
+    -webkit-column-gap: 5px;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 1;
+    -moz-column-gap: 5px;
+    column-count: 2;
+    column-gap: 5px;
+}
+
+#gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+    /* to match column gap */
+    filter: grayscale(100%);
+}
+
+#gallery img:hover {
+    filter: none;
+}
+
+@media (max-width: 1200px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+
+
+
+/* button */
+
+
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 65px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 40px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #0b870f;
+}
+
+.button1:hover {
+    background-color: #064308;
+    color: white;
+}
+
+.button2 {
+    background-color: #008CBA;
+    color: black;
+    border: 2px solid #085771;
+}
+
+.button2:hover {
+    background-color: #093a4a;
+    color: white;
+}
+
+.button3 {
+    background-color: #e41360;
+    color: rgb(228, 237, 234);
+    border: 2px solid #db115b;
+}
+
+@media (max-width: 1396px) {
+    .button {
+        padding: 15px 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .button {
+        padding: 15px 60px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+</style>
+
+</body>
+
+</html>
